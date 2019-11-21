@@ -59,6 +59,8 @@ public class AuthenticateJwt {
             LOG.debug(ExceptionUtils.getStackTrace(e));
             return false;
         }
+
         return Boolean.parseBoolean(valid);*/
+
     }
 }
