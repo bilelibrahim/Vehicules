@@ -30,7 +30,7 @@ authentication:
   expose:
    - "8587"
   extra_hosts:
-   - "{{ base_url }}:{{ host_ip }}"
+   - "{{ base_url }}:localhost"
 
 valet:
   build: valet/
@@ -41,7 +41,7 @@ valet:
   expose:
    - "8585"
   extra_hosts:
-   - "{{ base_url }}:{{ host_ip }}"
+   - "{{ base_url }}:localhost"
 
 maintenance:
   build: maintenance/
@@ -52,7 +52,7 @@ maintenance:
   expose:
    - "8583"
   extra_hosts:
-   - "{{ base_url }}:{{ host_ip }}"
+   - "{{ base_url }}:localhost"
 
 vehicle:
   build: vehicle/
@@ -63,7 +63,7 @@ vehicle:
   expose:
    - "8581"
   extra_hosts:
-   - "{{ base_url }}:{{ host_ip }}"
+   - "{{ base_url }}:localhost"
 
 graphite:
   image: hopsoft/graphite-statsd:latest
