@@ -2,7 +2,7 @@
 
 FROM mongo:latest
 
-MAINTAINER Gary A. Stafford <garystafford@rochester.rr.com>
+MAINTAINER Bilel I <bilel.brahim@gmail.com>
 
 ENV REFRESHED_AT 2015-07-07
 
