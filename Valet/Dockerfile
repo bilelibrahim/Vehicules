@@ -6,8 +6,8 @@ MAINTAINER Bilel I <bilel.brahim@gmail.com>
 
 ENV REFRESHED_AT 2016-11-06
 
-COPY ./build-artifacts /usr/share/java/virtual-vehicles
-WORKDIR /usr/share/java/virtual-vehicles
+COPY ./build-artifacts /Users/Shared/Jenkins/Home/workspace/Vehicule-Docker
+WORKDIR /Users/Shared/Jenkins/Home/workspace/Vehicule-Docker
 
 ENTRYPOINT ["java", "-classpath", ".:config:", "-jar", "{{ jar_file }}", "test", "com.example.valet.Main"]
 CMD [""]
