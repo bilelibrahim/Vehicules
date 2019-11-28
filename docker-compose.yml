@@ -28,7 +28,7 @@ services:
     ports:
      - 8587:8587
     extra_hosts:
-     - "{{ base_url }}:{{ host_ip }}"
+     - "{{ base_url }}:127.0.0.1"
     depends_on:
     - mongoauthentication
     - elk
@@ -41,7 +41,7 @@ services:
     ports:
      - 8585:8585
     extra_hosts:
-     - "{{ base_url }}:{{ host_ip }}"
+     - "{{ base_url }}:127.0.0.1"
     depends_on:
     - mongovalet
     - elk
@@ -54,7 +54,7 @@ services:
     ports:
      - 8583:8583
     extra_hosts:
-     - "{{ base_url }}:{{ host_ip }}"
+     - "{{ base_url }}:127.0.0.1"
     depends_on:
     - mongomaintenance
     - elk
@@ -67,7 +67,7 @@ services:
     ports:
      - 8581:8581
     extra_hosts:
-     - "{{ base_url }}:{{ host_ip }}"
+     - "{{ base_url }}:127.0.0.1"
     depends_on:
     - mongovehicle
     - elk
