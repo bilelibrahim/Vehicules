@@ -6,7 +6,7 @@
     <description>Virtual-Vehicles API
         https://maven.apache.org/guides/introduction/introduction-to-the-pom.html#Example_3
     </description>
-    <url>https://github.com/garystafford/virtual-vehicle-demo</url>
+    <url>https://github.com/bilelibrahim/Vehicules.git</url>
     <groupId>com.example</groupId>
     <artifactId>Virtual-Vehicles-API</artifactId>
     <version>1</version>
