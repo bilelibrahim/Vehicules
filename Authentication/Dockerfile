@@ -6,7 +6,8 @@ MAINTAINER Bilel I <bilel.brahim@gmail.com>
 
 ENV REFRESHED_AT 2016-11-06
 
-WORKDIR /home/bilel/projets/vehicle-docker
+COPY ./build-artifacts /usr/share/java/virtual-vehicles
+WORKDIR /usr/share/java/virtual-vehicles
 
 ENTRYPOINT ["java", "-classpath", ".:config:", "-jar", "Authentication-1.0-SNAPSHOT.jar", "test", "com.example.authentication.Main"]
 CMD [""]
