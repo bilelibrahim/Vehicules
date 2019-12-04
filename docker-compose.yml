@@ -24,7 +24,7 @@ services:
     build: mongo/
 
   authentication:
-    build: authentication/
+    build: Authentication/
     ports:
      - 8587:8587
     extra_hosts:
@@ -37,7 +37,7 @@ services:
     container_name: authentication
 
   valet:
-    build: valet/
+    build: Valet/
     ports:
      - 8585:8585
     extra_hosts:
@@ -50,7 +50,7 @@ services:
     container_name: valet
 
   maintenance:
-    build: maintenance/
+    build: Maintenance/
     ports:
      - 8583:8583
     extra_hosts:
@@ -63,7 +63,7 @@ services:
     container_name: maintenance
 
   vehicle:
-    build: vehicle/
+    build: Vehicle/
     ports:
      - 8581:8581
     extra_hosts:
