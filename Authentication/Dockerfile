@@ -6,7 +6,7 @@ MAINTAINER Bilel I <bilel.brahim@gmail.com>
 
 ENV REFRESHED_AT 2016-11-06
 
-COPY /home/bilel/projets/vehicle-docker/Authentication-1.0-SNAPSHOT.jar /usr/share/java/virtual-vehicles
+COPY /home/bilel/projets/vehicle-docker/Authentication-1.0-SNAPSHOT.jar /usr/share/java/virtual-vehicles/Authentication-1.0-SNAPSHOT.jar
 WORKDIR /usr/share/java/virtual-vehicles
 
 ENTRYPOINT ["java", "-classpath", ".:config:", "-jar", "Authentication-1.0-SNAPSHOT.jar", "test", "com.example.authentication.Main"]
