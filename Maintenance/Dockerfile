@@ -9,5 +9,5 @@ ENV REFRESHED_AT 2016-11-06
 COPY /home/bilel/projets/vehicle-docker/Maintenance-1.0-SNAPSHOT.jar /usr/share/java/virtual-vehicles/Maintenance-1.0-SNAPSHOT.jar
 WORKDIR /usr/share/java/virtual-vehicles
 
-ENTRYPOINT ["java", "-classpath", ".:config:", "-jar", "Maintenance-1.0-SNAPSHOT.jar", "test", "com.example.maintenance.Main"]
+ENTRYPOINT ["java", "-classpath", ".:config:", "-jar", "/usr/share/java/virtual-vehicles/Maintenance-1.0-SNAPSHOT.jar", "test", "com.example.maintenance.Main"]
 CMD [""]

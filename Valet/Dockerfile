@@ -9,5 +9,5 @@ ENV REFRESHED_AT 2016-11-06
 COPY /home/bilel/projets/vehicle-docker/Valet-1.0-SNAPSHOT.jar /usr/share/java/virtual-vehicles/Valet-1.0-SNAPSHOT.jar
 WORKDIR /usr/share/java/virtual-vehicles
 
-ENTRYPOINT ["java", "-classpath", ".:config:", "-jar", "Valet-1.0-SNAPSHOT.jar", "test", "com.example.valet.Main"]
+ENTRYPOINT ["java", "-classpath", ".:config:", "-jar", "/usr/share/java/virtual-vehicles/Valet-1.0-SNAPSHOT.jar", "test", "com.example.valet.Main"]
 CMD [""]
